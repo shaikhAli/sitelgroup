@@ -11,7 +11,7 @@
   font-weight: 700;
   flex-direction: column;
   border-bottom: 1px solid #ccc;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
 }
 
 .player-call-id {
@@ -56,7 +56,8 @@
 .btn-keyword,
 .btn-entity,
 .btn-phrase,
-.btn-incident {
+.btn-incident,
+.btn-review {
   border-radius: 5px;
   border: transparent;
   margin: 5px;
@@ -77,6 +78,16 @@
 
 .btn-incident {
   background-color: #f5cdca;
+}
+
+.btn-review-container {
+  position: absolute;
+  right: 10px;
+}
+.btn-review,
+.btn-review:hover {
+  background-color: #000;
+  color: #fff;
 }
 
 .player-label-content {

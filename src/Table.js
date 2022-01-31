@@ -48,7 +48,7 @@ const columns = [
         center: true,
         cell: (row) => (
             <div>
-                <p><span className="component-title">{row.components} </span><i className="fa fa-info-circle component-info"></i></p>
+                {row.components} <i className="fa fa-info-circle component-info"></i>
                 <div className="info-details">
 
                     <div className="info-header">
@@ -92,6 +92,8 @@ const columns = [
                                 />
 
                             </div>
+
+
                         </div>
                     </div>
 

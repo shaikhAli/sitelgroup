@@ -14,7 +14,11 @@ const Player = () => {
                     <div>2</div>
                     <div><i className="fa fa-smile"></i>    0.31</div>
                     <div><i className="fa fa-star"></i>   3</div>
+                    <div className="btn-review-container">
+                        <button className="btn btn-review">Revewi Form</button>
+                    </div>
                 </div>
+                
 
                 
             </div>
