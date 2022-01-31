@@ -1,0 +1,42 @@
+.manu-navigation {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  max-height: 100px;
+  width: 100%;
+  background-color: #fff;
+  border: 2px solid #A6A6A6;
+}
+
+.manu-navigation .logo{
+  cursor: pointer;
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: row;
+  background-color: #2F5597;
+  max-height: 50px;
+  border-radius: 7px;
+  width: 100%;
+  padding: 5px;
+  align-items: center;
+  height: 30px;
+  margin: 20px 10px 0 0;
+}
+
+.menu-items {
+  width: 100%;
+  float: left;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.menu-items:hover {
+  background-color: #fff;
+  color: #2F5597;
+  cursor: pointer;
+}

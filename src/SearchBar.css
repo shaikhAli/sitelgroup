@@ -1,0 +1,149 @@
+.search-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 10px;
+  border-left: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+}
+
+.search-bar {
+  width: 500px;
+  padding: 10px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #2f5597;
+  border-radius: 0;
+  box-sizing: border-box;
+  border-left: transparent;
+  outline: transparent;
+}
+
+.search-btn-container {
+  margin: 0 30px;
+}
+
+.search-list {
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid #5b9bd5;
+  border-right: transparent;
+  padding-left: 10px;
+}
+
+.search-btn-bar1,
+.search-btn-bar2,
+.search-btn-bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 7px 0;
+  transition: 0.4s;
+  /* text-align: center; */
+}
+
+.search-btn-bar2 {
+  width: 25px;
+}
+
+.search-btn-bar3 {
+  width: 15px;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  border: 1px solid #32409B;
+  border-right: 0;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  z-index: 1;
+  margin-top: 290px;
+  border: 2px solid #32409B;
+  margin-left: 56px;
+  font-weight: 400;
+  font-size: 18px;
+  color: black;
+}
+
+.dropdown-container{
+  margin: 20px;
+  width: 250px;
+}
+
+.show-search-dropdown{
+  display: block;
+}
+
+.location-link {
+  text-decoration: underline;
+  color: #2f5597;
+  position: relative;
+  display: inline-block;
+  border-right: 0;
+  cursor: pointer;
+  z-index: 2;
+} 
+
+.dropdown-content-location {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  z-index: 1;
+  margin-top: 250px;
+  border: 2px solid #32409B;
+  margin-left: 56px;
+}
+
+.dropdown-content-location-modal-show {
+  display: block;
+} 
+
+.location-container{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: auto;
+
+}
+
+.location-container .header{
+  height: 50px;
+  background-color: #808080;
+  color: #fff;
+  padding: 5px 0 0 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.location-container .content{
+  padding: 5px 0 0 20px;
+  font-size: 18px;
+  font-weight: 600;
+  flex-direction: column;
+}
+
+.location-container .content-input{
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+}
+
+.location-container .apply-btn{
+ text-align: right;
+ margin: 15px;
+ font-size: 18px;
+ font-weight: 700;
+ text-transform: uppercase;
+}
+
+
+
