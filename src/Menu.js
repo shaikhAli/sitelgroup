@@ -1,13 +1,13 @@
-import './Menu.css'
-import Logo from './assets/logo.png'
+import "./Menu.css"
+import Logo from "./assets/logo.png"
 
 const Menu = () => {
     return (
         <div className="manu-navigation">
             <div className="logo">
-                <img src={Logo} alt='Logo' title='Logo' />
+                <img src={Logo} alt="Logo" title="Logo" />
             </div>
-            <div className='menu-container'> 
+            <div className="menu-container">
                 <div className="menu-items">Menu1</div>
                 <div className="menu-items">Menu2</div>
                 <div className="menu-items">Menu3</div>

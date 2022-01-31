@@ -1,10 +1,9 @@
 import './App.css';
-import Dashboard from './Dashboard';
+import 'font-awesome/css/font-awesome.min.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Dashboard from './Dashboard';
 import Player from './Player';
 import NoPage from './NoPage';
-import 'font-awesome/css/font-awesome.min.css';
-
 
 function App() {
   return (

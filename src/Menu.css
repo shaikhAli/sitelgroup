@@ -5,17 +5,17 @@
   max-height: 100px;
   width: 100%;
   background-color: #fff;
-  border: 2px solid #A6A6A6;
+  border: 2px solid #a6a6a6;
 }
 
-.manu-navigation .logo{
+.manu-navigation .logo {
   cursor: pointer;
 }
 
 .menu-container {
   display: flex;
   flex-direction: row;
-  background-color: #2F5597;
+  background-color: #2f5597;
   max-height: 50px;
   border-radius: 7px;
   width: 100%;
@@ -37,6 +37,6 @@
 
 .menu-items:hover {
   background-color: #fff;
-  color: #2F5597;
+  color: #2f5597;
   cursor: pointer;
 }

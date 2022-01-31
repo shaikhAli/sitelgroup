@@ -1,14 +1,10 @@
-import React, { useState } from "react";
-// import ReactDOM from "react-dom";
+import React from "react";
 import DataTable from "react-data-table-component";
-// import movies from "./movies";
 import "bootstrap/dist/js/bootstrap.bundle.js";
 import "bootstrap/dist/css/bootstrap.css";
-import "./styles.css";
 import './Table.css';
 import data from './data/records.json';
 import ToggleButton from './ToggleButton';
-
 
 const arrayRecords = Object.values(data);
 
@@ -52,7 +48,7 @@ const columns = [
         center: true,
         cell: (row) => (
             <div>
-                {row.components} <i className="fa fa-info-circle component-info"></i>
+                <p><span className="component-title">{row.components} </span><i className="fa fa-info-circle component-info"></i></p>
                 <div className="info-details">
 
                     <div className="info-header">
@@ -96,17 +92,12 @@ const columns = [
                                 />
 
                             </div>
-
-
                         </div>
                     </div>
 
                 </div>
             </div>
-        ),
-        style: {
-            // minWidth: '200px', // override the row height
-        }
+        )
     },
     {
         name: "Modified By",
@@ -134,9 +125,6 @@ const columns = [
     },
     {
         name: "Status",
-        // selector: (row) => row.status,
-        // sortable: true,
-        // center: true,
         button: true,
         cell: (row) => (
             <ToggleButton status={row.status} />
@@ -269,12 +257,8 @@ const columns = [
                                                             status="1"
                                                             className="edit-modal-toggle-btn"
                                                         />
-
                                                     </div>
-
-
                                                 </div>
-
                                             </div>
                                         </div>
                                     </div>
@@ -285,33 +269,13 @@ const columns = [
 
                                 </div>
                             </div>
-                            {/* <div className="modal-footer">
-                                <button className="btn-regular">Save</button>
-                                <button className="btn-regular">Save As</button>
-                            </div> */}
                         </div>
                     </div>
                 </div>
-
-                {/* <div className={"edit-modal " + (editModal ? 'edit-modal-show' : '')}>
-                    <div className='dropdown-container'>
-                        <p
-                            className='location-link'
-
-                        >
-                            Location
-                        </p>
-                        <p>Rule</p>
-                        <p>MiComponents/Indicatorlk</p>
-                        <p>Modified By</p>
-                        <p>Created By</p>
-                    </div>
-                </div> */}
             </div>
         ),
     }
 ];
-
 
 // RDT exposes the following internal pagination properties
 const BootyPagination = ({
@@ -387,7 +351,6 @@ const BootyPagination = ({
 const customStyles = {
     rows: {
         style: {
-            // minHeight: '72px', // override the row height
             border: '2px solid #CCCCCC',
             borderLeft: 'none',
             borderRight: 'none'
@@ -398,10 +361,6 @@ const customStyles = {
             border: '2px solid #CCCCCC',
             borderBottom: 'none',
             borderTop: 'none',
-            // borderLeft:'2px solid #CCCCCC',
-            // borderRight:'2px solid #CCC',
-            // paddingLeft: '8px', // override the cell padding for head cells
-            // paddingRight: '8px',
             height: '60px',
             fontSize: '18px',
             color: '#5B9BD5',
@@ -421,20 +380,17 @@ const customStyles = {
 const Table = () => {
 
     return (
-        <>
-
-            <div className="table-container">
-                <DataTable
-                    className="table-container"
-                    columns={columns}
-                    data={data}
-                    defaultSortFieldID={1}
-                    pagination
-                    paginationComponent={BootyPagination}
-                    customStyles={customStyles}
-                />
-            </div>
-        </>
+        <div className="table-container">
+            <DataTable
+                className="table-container"
+                columns={columns}
+                data={data}
+                defaultSortFieldID={1}
+                pagination
+                paginationComponent={BootyPagination}
+                customStyles={customStyles}
+            />
+        </div>
     );
 }
 

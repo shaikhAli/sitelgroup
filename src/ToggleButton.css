@@ -5,7 +5,7 @@
   height: 27px;
 }
 
-.switch input { 
+.switch input {
   opacity: 0;
   width: 0;
   height: 0;
@@ -18,9 +18,9 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #F37E98;
-  -webkit-transition: .4s;
-  transition: .4s;
+  background-color: #f37e98;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .slider:before {
@@ -30,17 +30,17 @@
   width: 25px;
   left: 0px;
   bottom: 0px;
-  background-color: #B3B2C3;
-  -webkit-transition: .4s;
-  transition: .4s;
+  background-color: #b3b2c3;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 input:checked + .slider {
-  background-color: #00AC9C;
+  background-color: #00ac9c;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #00AC9C;
+  box-shadow: 0 0 1px #00ac9c;
 }
 
 input:checked + .slider:before {
@@ -57,4 +57,3 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
-

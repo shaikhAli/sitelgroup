@@ -12,12 +12,12 @@ const SearchBar = () => {
 
     const [searchDropdown, openSearchDropdown] = useState(false);
     const [locationModal, openLocationModal] = useState(false);
-    
+
     const handleLocationModal = () => {
         openLocationModal(!locationModal);
         openSearchDropdown(!searchDropdown);
     }
-    
+
     const handleSearchDropdown = () => {
         openLocationModal(false);
         openSearchDropdown(!searchDropdown);
@@ -34,7 +34,7 @@ const SearchBar = () => {
                     <div className="search-btn-bar2"></div>
                     <div className="search-btn-bar3"></div>
 
-                   
+
                 </div>
 
                 <div className={"dropdown-content " + (searchDropdown ? 'show-search-dropdown' : '')}>
@@ -64,7 +64,7 @@ const SearchBar = () => {
                                 type={"text"}
                                 placeholder='Value'
                             />
-                            
+
                         </div>
                         <div className='apply-btn'>
                             Apply
@@ -72,12 +72,12 @@ const SearchBar = () => {
                     </div>
                 </div>
 
-                <input className="search-bar" type={"text"} placeholder="Search or Filter Menu3" /> 
+                <input className="search-bar" type={"text"} placeholder="Search or Filter Menu3" />
                 <div className='search-btn-container'>
                     <button className='btn-regular' onClick={search} >Search</button>
                     <button className='btn-regular' onClick={clearSearch} >Clear</button>
                 </div>
- 
+
             </div>
         </>
     )

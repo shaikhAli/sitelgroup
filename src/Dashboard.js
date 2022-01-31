@@ -7,7 +7,6 @@ import { Link } from 'react-router-dom';
 const Dashboard = () => {
     return (
         <div className='dashboard-container'>
-            
             <Menu />
             <SearchBar />
             <Table />
@@ -18,6 +17,5 @@ const Dashboard = () => {
         </div>
     )
 }
-
 
 export default Dashboard;
